@@ -118,16 +118,19 @@
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
+        <form>
+          <label for="name">Full Name<span aria-hidden="true" class="required">*</span></label>
+          <input id="name" type="text" required/>
+          Email Address
+          Phone Number
+          Membership Type
+            Select a Membership Option
+            Monthly Membership
+            Annual Membership
+            Family & Group Plans
+          Tell us about your fitness goals:
+          <input type="submit" name="submit" value="Submit">
+        </form>
       </section>
     </section>
   </main>
