@@ -39,9 +39,11 @@
     <a href="#">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
-
+    <picture>
+      <source media="(min-width: 768px)" srcset="images/facility-768w.jpg">
+      <source media="(min-width: 320px)" srcset="images/facility-320w.jpg">
+      <img src="images/facility.jpg" alt="">
+    </picture>
   </header>
   <nav>
     <h2>Main Navigation</h2>
