@@ -126,13 +126,14 @@
           <label for="phone">Phone Number<span aria-hidden="true" class="required">*</span></label>
           <input id="phone" type="tel" name="phone" required>
           <fieldset>
-            <legend>Membership Type<span aria-hidden="true">*</span> Select a Membership Option</legend>
+            <legend>Membership Type<span aria-hidden="true">*</span></legend>
               <label for="monthly">Select a Membership Option</label>
-              <label for="monthly"><input id="monthly" name="membership" type="radio" value="monthly" required>Monthly Membership</label>
-              <label for="annual"><input id="annual" name="billing-option" type="radio" value="annual" required/>Annual Membership<span aria-hidden="true" class="required">*</span></label>
-              
-              <label for="group">Family & Group Plans<span aria-hidden="true" class="required">*</span></label>
-              <input id="group" name="billing-option" type="radio" value="group" required/>
+              <input id="monthly" name="membership" type="radio" value="monthly" required>
+              <label for="monthly">Monthly Membership</label>
+              <input id="annual" name="membership" type="radio" value="annual">
+              <label for="annual">Annual Membership</label>
+              <input id="group" name="membership" type="radio" value="group">
+              <label for="group">Family & Group Plan</label>
           </fieldset>
           <label for="message">Tell us about your fitness goals:<span aria-hidden="true" class="required">*</span></label>
           <textarea id="message" required></textarea>
