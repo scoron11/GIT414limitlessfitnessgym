@@ -40,11 +40,11 @@
     <a href="#">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    <picture>
-      <source media="(min-width: 768px)" srcset="images/facility-768w.jpg">
-      <source media="(min-width: 320px)" srcset="images/facility-320w.jpg">
-      <img src="images/facility.jpg" alt="Limitless Fitness, black and white photo of gym equipment, treadmill, dumbells, benchpress, windows in the back with skyscraper view.">
-    </picture>
+<img 
+  src="images/facility-320w.jpg" 
+  srcset="images/facility-320w.jpg 320w, images/facility-768w.jpg 768w" 
+  sizes="(min-width: 768px) 768px, 100vw" 
+  alt="Limitless Fitness, black and white photo of gym equipment, treadmill, dumbells, benchpress, windows in the back with skyscraper view.">
   </header>
   <nav>
     <h2>Main Navigation</h2>
@@ -83,12 +83,11 @@
       </ul>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-     <picture>
-      <source media="(min-width: 768px)" srcset="images/classes-768w.jpg">
-      <source media="(min-width: 320px)" srcset="images/classes-320w.jpg">
-      <img src="images/classes.jpg" alt="Limitless Gym, black and white photo of three people squatting while holding weights, facing away from camera to the left">
-    </picture>
-
+<img 
+  src="images/classes-320w.jpg" 
+  srcset="images/classes-320w.jpg 320w, images/classes-768w.jpg 768w" 
+  sizes="(min-width: 768px) 768px, 100vw" 
+  alt="Limitless Gym, black and white photo of three people squatting while holding weights, facing away from camera to the left">
     </section>
     <section>
       <h2>Personal Training</h2>
@@ -99,12 +98,11 @@
       <a href="#">Book a Free Consultation today!</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-      <picture>
-      <source media="(min-width: 768px)" srcset="images/dumbells-768w.jpg">
-      <source media="(min-width: 320px)" srcset="images/dumbells-320w.jpg">
-      <img src="images/dumbells.jpg" alt="Limitless Gym, black and white photo of two stacked racks of dumbells">
-    </picture>
-
+<img 
+  src="images/dumbells-320w.jpg" 
+  srcset="images/dumbells-320w.jpg 320w, images/dumbells-768w.jpg 768w" 
+  sizes="(min-width: 768px) 768px, 100vw" 
+  alt="Limitless Gym, black and white photo of two stacked racks of dumbells">
     </section>
     <section>
       <h2>Membership Options</h2>
@@ -128,7 +126,7 @@
           <fieldset>
             <legend>Membership Type<span aria-hidden="true">*</span></legend>
             <p class="sr-only">Select a membership option:</p>
-              <input id="monthly" name="membership" type="radio" value="monthly" required>
+              <input id="monthly" name="membership" type="radio" value="monthly">
               <label for="monthly">Monthly Membership</label>
               <input id="annual" name="membership" type="radio" value="annual">
               <label for="annual">Annual Membership</label>
